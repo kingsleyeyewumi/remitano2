@@ -1,0 +1,1497 @@
+@media (max-width:1440px) {
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+      /* Login Index Main Body Line 11 html */
+      #loginIndexCoverPage {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 3rem auto 3rem;
+            /* border: 4px solid black; */
+            min-height: 100vh;
+            position: relative;
+            /* padding-left: 0.5rem; */
+            /* padding-right: 0.5rem; */
+            grid-template-areas: "loginUpNavBar"
+                  "loginMainBody"
+                  "loginBottomNavBar";
+      }
+
+      /* CONTENTS OF #loginIndexCoverPage */
+
+      /* .loginUpNavBar starts here */
+      .loginUpNavBar {
+            grid-area: loginUpNavBar;
+            /* border: 3px solid blue; */
+            display: grid;
+            position: fixed;
+            width: 100%;
+            height: 3rem;
+            top: 0px;
+            z-index: 1000;
+            background-color: white;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "imageIconContainer notificationIconContainer";
+      }
+
+      /* imageIconContainer */
+      .imageIconContainer {
+            grid-area: imageIconContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            align-items: center;
+      }
+
+      /* imageIconHolder */
+      .imageIconHolder {
+            display: flex;
+            position: absolute;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            background: rgb(124, 65, 147);
+            border-radius: 50%;
+            text-decoration: none;
+            justify-content: center;
+            padding-top: 0.3rem;
+            opacity: 0.6;
+      }
+
+      .imageIconHolder .fa-solid {
+            color: rgb(39, 21, 21);
+            font-size: 1.1rem;
+      }
+
+      /* notificationIconContainer */
+      .notificationIconContainer {
+            grid-area: notificationIconContainer;
+            /* border: 2px solid green; */
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: flex-end;
+      }
+
+      /* notificationIconHolder */
+      .notificationIconHolder {
+            display: flex;
+            position: absolute;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            justify-content: center;
+            text-decoration: none;
+      }
+
+      .notificationIconHolder .fa-solid {
+            color: rgb(124, 65, 147);
+            font-size: 1.2rem;
+      }
+
+      /* .loginUpNavBar ends here */
+
+
+
+      /* .loginMainBody starts here */
+      .loginMainBody {
+            grid-area: loginMainBody;
+            /* border: 3px solid red; */
+            display: grid;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "updatesLogoBitcoinRegisterLoginContainer"
+                  "coinsChartsPricesContainer"
+                  "learnExploreContainer";
+      }
+
+      /* updatesLogoBitcoinRegisterLoginContainer */
+      .updatesLogoBitcoinRegisterLoginContainer {
+            grid-area: updatesLogoBitcoinRegisterLoginContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas: "updatesAvailableContainer"
+                  "logoContainer"
+                  "bitcoinToUsdContainer"
+                  "registerNowContainer"
+                  "loginContainer";
+            gap: 0.7rem;
+      }
+
+      /* updatesAvailableContainer starts here */
+      .updatesAvailableContainer {
+            grid-area: updatesAvailableContainer;
+            border: 1px solid rgb(124, 65, 147);
+            background: rgb(235, 225, 243);
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.7rem;
+            padding: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            text-decoration: none;
+            grid-template-areas: "updatesAvailableIconContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer updatesAvailableWordsContainer";
+      }
+
+      .updatesAvailableIconContainer {
+            grid-area: updatesAvailableIconContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .updatesAvailableIconHolder {
+            display: flex;
+            position: absolute;
+            min-height: 1rem;
+            min-width: 1rem;
+            /* border: 3px solid black; */
+            background: rgb(211, 129, 233);
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.5rem;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .updatesAvailableWordsContainer {
+            grid-area: updatesAvailableWordsContainer;
+            /* border: 2px solid blue; */
+            display: flex;
+            position: relative;
+      }
+
+      .updatesAvailableWordsHolder {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 2rem;
+            width: 100%;
+            /* border: 3px solid black; */
+            color: rgb(48, 17, 20);
+            font-size: 0.6rem;
+            justify-content: center;
+      }
+
+      .updatesAvailableWordsHolder h3 {
+            margin-bottom: 0.3rem;
+      }
+
+      /* updatesAvailableContainer ends here */
+
+
+      /* logoContainer starts here */
+      .logoContainer {
+            grid-area: logoContainer;
+            /* border: 2px solid blue; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+      }
+
+      .logoHolder {
+            display: flex;
+            position: relative;
+            min-width: 12rem;
+            min-height: 12rem;
+            /* border: 2px solid gold; */
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: 100%;
+            background-image: url(images/renecR2.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+      }
+
+      /* logoContainer ends here */
+
+
+      /* bitcoinToUsdContainer starts here */
+      .bitcoinToUsdContainer {
+            grid-area: bitcoinToUsdContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+      }
+
+      .bitcoinToUsdHolder {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 2.5rem;
+            width: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: center;
+            color: rgb(20, 30, 20);
+      }
+
+      .bitcoinToUsdHolder h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+      }
+
+      .bitcoinToUsdHolder p {
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+      }
+
+      /* bitcoinToUsdContainer ends here */
+
+
+      /* registerNowContainer starts here */
+      .registerNowContainer {
+            grid-area: registerNowContainer;
+            /* border: 2px solid green; */
+            display: flex;
+            position: relative;
+      }
+
+      .registerNowHolder {
+            display: flex;
+            position: relative;
+            min-height: 2.5rem;
+            width: 100%;
+            background: rgb(124, 65, 147);
+            border-radius: 0.44rem;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+      }
+
+      /* registerNowContainer ends here */
+
+
+      /* loginContainer starts here */
+      .loginContainer {
+            grid-area: loginContainer;
+            /* border: 2px solid brown; */
+            display: flex;
+            position: relative;
+            margin-bottom: 0.5rem;
+      }
+
+      .loginHolder {
+            display: flex;
+            position: relative;
+            min-height: 2.5rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            border-radius: 0.44rem;
+            justify-content: center;
+            align-items: center;
+            color: rgb(124, 65, 147);
+            text-decoration: none;
+            margin-bottom: 3rem;
+            padding: 1rem;
+      }
+
+      /* loginContainer ends here */
+
+
+      /* coinsChartsPricesContainer starts here */
+      .coinsChartsPricesContainer {
+            grid-area: coinsChartsPricesContainer;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+      }
+
+      /* BTC Market starts here */
+      .btcMarketContainer {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 4rem;
+            width: 100%;
+            border: 0.01rem solid rgb(27, 9, 9);
+            border-radius: 0.3rem;
+            text-decoration: none;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+      }
+
+      /* BTC Logo & Name */
+      .btcLogoName {
+            display: flex;
+            flex-direction: row;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid goldenrod; */
+            position: relative;
+            align-items: center;
+      }
+
+      .btcLogoHolder {
+            display: flex;
+            position: relative;
+            min-width: 35%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      .btcLogo {
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background-image: url(images/btcLogo.png);
+            background-size: contain;
+      }
+
+      .btcNameHolder {
+            display: flex;
+            position: relative;
+            min-width: 65%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            align-items: center;
+            padding-left: 0.5rem;
+            color: rgb(27, 9, 9);
+      }
+
+      /* BTC Chart */
+      .btcChart {
+            display: flex;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid green; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .btcChartHolder {
+            display: flex;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* BTC Price */
+      .btcPrice {
+            display: flex;
+            min-width: 40%;
+            min-height: 4rem;
+            /* border: 2px solid blue; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .btcPriceHolder {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+      }
+
+      .btcPriceAmount {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid red; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 1.2rem;
+      }
+
+      .btcPriceVolume {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid green; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+      }
+
+      /* BTC Market ends here */
+
+
+      /* USDT Market starts here */
+      .usdtMarketContainer {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 4rem;
+            width: 100%;
+            border: 0.01rem solid rgb(27, 9, 9);
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            text-decoration: none;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+      }
+
+      /* USDT Logo & Name */
+      .usdtLogoName {
+            display: flex;
+            flex-direction: row;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid goldenrod; */
+            position: relative;
+            align-items: center;
+      }
+
+      .usdtLogoHolder {
+            display: flex;
+            position: relative;
+            min-width: 35%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      .usdtLogo {
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background-image: url(images/usdtLogo.png);
+            background-size: 140%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      .usdtNameHolder {
+            display: flex;
+            position: relative;
+            min-width: 65%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            align-items: center;
+            padding-left: 0.5rem;
+            color: rgb(27, 9, 9);
+      }
+
+      /* USDT Chart */
+      .usdtChart {
+            display: flex;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid green; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .usdtChartHolder {
+            display: flex;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* USDT Price */
+      .usdtPrice {
+            display: flex;
+            min-width: 40%;
+            min-height: 4rem;
+            /* border: 2px solid blue; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .usdtPriceHolder {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+      }
+
+      .usdtPriceAmount {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid red; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 1.2rem;
+      }
+
+      .usdtPriceVolume {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid green; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+      }
+
+      /* USDT Market ends here */
+
+
+      /* ETH & BNB Market In Drop-Down starts here */
+      /* Drop-Down satrs here */
+      .ethBnbMarketContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+      }
+
+      /* Button */
+      .ethBnbButton {
+            display: flex;
+            position: absolute;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            border: 2px solid rgb(124, 65, 147);
+            border-radius: 50%;
+            top: -0.7rem;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .ethBnbButton .fa-solid {
+            color: rgb(124, 65, 147);
+      }
+
+      .ethBnbMarketContainer .ethMarketContainer {
+            display: none;
+      }
+
+      .ethBnbMarketContainer:hover .ethMarketContainer {
+            display: flex;
+      }
+
+      .ethBnbMarketContainer .bnbMarketContainer {
+            display: none;
+      }
+
+      .ethBnbMarketContainer:hover .bnbMarketContainer {
+            display: flex;
+      }
+
+      /* Drop-Down ends here */
+
+
+      /* ETH Market starts here */
+      .ethMarketContainer {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 4rem;
+            width: 100%;
+            border: 0.01rem solid rgb(27, 9, 9);
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            text-decoration: none;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+      }
+
+      /* ETH Logo & Name */
+      .ethLogoName {
+            display: flex;
+            flex-direction: row;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid goldenrod; */
+            position: relative;
+            align-items: center;
+      }
+
+      .ethLogoHolder {
+            display: flex;
+            position: relative;
+            min-width: 35%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      .ethLogo {
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background-image: url(images/ethLogo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      .ethNameHolder {
+            display: flex;
+            position: relative;
+            min-width: 65%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            align-items: center;
+            padding-left: 0.5rem;
+            color: rgb(27, 9, 9);
+      }
+
+      /* ETH Chart */
+      .ethChart {
+            display: flex;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid green; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .ethChartHolder {
+            display: flex;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* ETH Price */
+      .ethPrice {
+            display: flex;
+            min-width: 40%;
+            min-height: 4rem;
+            /* border: 2px solid blue; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .ethPriceHolder {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+      }
+
+      .ethPriceAmount {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid red; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 1.2rem;
+      }
+
+      .ethPriceVolume {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid green; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+      }
+
+      /* ETH Market ends here */
+
+
+      /* BNB Market starts here */
+      .bnbMarketContainer {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 4rem;
+            width: 100%;
+            border: 0.01rem solid rgb(27, 9, 9);
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            text-decoration: none;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+      }
+
+      /* BNB Logo & Name */
+      .bnbLogoName {
+            display: flex;
+            flex-direction: row;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid goldenrod; */
+            position: relative;
+            align-items: center;
+      }
+
+      .bnbLogoHolder {
+            display: flex;
+            position: relative;
+            min-width: 35%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      .bnbLogo {
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background-image: url(images/bnbLogo.png);
+            background-size: 140%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      .bnbNameHolder {
+            display: flex;
+            position: relative;
+            min-width: 65%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            align-items: center;
+            padding-left: 0.5rem;
+            color: rgb(27, 9, 9);
+      }
+
+      /* BNB Chart */
+      .bnbChart {
+            display: flex;
+            min-width: 30%;
+            min-height: 4rem;
+            /* border: 2px solid green; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .bnbChartHolder {
+            display: flex;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* BNB Price */
+      .bnbPrice {
+            display: flex;
+            min-width: 40%;
+            min-height: 4rem;
+            /* border: 2px solid blue; */
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .bnbPriceHolder {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            min-width: 100%;
+            min-height: 2.5rem;
+            /* border: 2px solid blue; */
+      }
+
+      .bnbPriceAmount {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid red; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 1.2rem;
+      }
+
+      .bnbPriceVolume {
+            display: flex;
+            position: relative;
+            width: 100%;
+            min-height: 1.25rem;
+            /* border: 2px solid green; */
+            justify-content: end;
+            color: rgb(27, 9, 9);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+      }
+
+      /* BNB Market ends here */
+      /* ETH & BNB Market In Drop-Down ends here */
+      /* coinsChartsPricesContainer ends here */
+
+
+      /* learnExploreContainer starts here */
+      .learnExploreContainer {
+            grid-area: learnExploreContainer;
+            /* border: 2px solid green; */
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            grid-template-areas: "learnExploreHeaderContainer"
+                  "learnExploreBodyContainer";
+      }
+
+      /* Learn / Explore HEADER BAR starts here */
+      .learnExploreHeaderContainer {
+            grid-area: learnExploreHeaderContainer;
+            /* border: 2px solid red; */
+            display: grid;
+            padding: 0.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "learnContainer exploreContainer";
+      }
+
+      .learnContainer {
+            grid-area: learnContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            min-height: 1rem;
+            align-items: center;
+            color: rgb(27, 9, 9);
+            ;
+            font-weight: bold;
+      }
+
+      .exploreContainer {
+            grid-area: exploreContainer;
+            /* border: 2px solid blue; */
+            display: flex;
+            position: relative;
+            min-height: 1rem;
+            align-items: center;
+            justify-content: flex-end;
+            color: rgb(124, 65, 147);
+      }
+
+      .exploreContainer a {
+            text-decoration: none;
+      }
+
+      /* Learn / Explore HEADER BAR endss here */
+      /* Learn / Explore BODY starts here */
+      .learnExploreBodyContainer {
+            grid-area: learnExploreBodyContainer;
+            /* border: 2px solid blue; */
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            display: grid;
+            gap: 0.8rem;
+      }
+
+      /* News Update 1 */
+      .theImpactOfRegulatoryPolicies {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .theImpactOfRegulatoryPoliciesWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .theImpactOfRegulatoryPoliciesWords .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .theImpactOfRegulatoryPoliciesImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* background-position: 120%; */
+      }
+
+      /* News Update 2 */
+      .theDollarToNairaBlackMarket {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .theDollarToNairaBlackMarketWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .theDollarToNairaBlackMarketWords .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .theDollarToNairaBlackMarketImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads2.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* background-position: 120%; */
+      }
+
+      /* News Update 3 */
+      .mobileCryptocurrencyManagement {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .mobileCryptocurrencyManagementWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .mobileCryptocurrencyManagementWords .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .mobileCryptocurrencyManagementImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads3.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+      }
+
+      /* News Update 4 */
+      .decodingCryptoTheFutureOfBitcoin {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .decodingCryptoTheFutureOfBitcoinWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .decodingCryptoTheFutureOfBitcoinWords .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .decodingCryptoTheFutureOfBitcoinImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads4.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+      }
+
+      /* News Update 5 */
+      .insiderTipsForASecureBitcoin {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .insiderTipsForASecureBitcoinWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .insiderTipsForASecureBitcoinWords .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .insiderTipsForASecureBitcoinImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads5.jpg_large);
+            background-size: 100%;
+            background-repeat: no-repeat;
+      }
+
+      /* News Updates 6 */
+      .theMultiMillionConversion {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            border: 1px solid rgb(124, 65, 147);
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+      }
+
+      /* Letters */
+      .theMultiMillionConversionWords {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid red; */
+            position: relative;
+            border-radius: 0.5rem;
+            color: black;
+            font-size: 0.8rem;
+      }
+
+      .theMultiMillionConversion .words {
+            font-weight: bold;
+            margin-top: 0.3rem;
+      }
+
+      /* Image */
+      .theMultiMillionConversionImages {
+            display: flex;
+            min-width: 50%;
+            min-height: 4rem;
+            /* border: 2px solid black; */
+            position: relative;
+            border-radius: 0.5rem;
+            background-image: url(images/ads6.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+      }
+
+      /* Learn / Explore BODY ends here */
+
+      .ratedExcellentBy12980Container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            /* border: 1px solid rgb(124, 65, 147); */
+            background: rgb(245, 242, 248);
+            border-radius: 0.5rem;
+            padding: 0.9rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            grid-template-areas: "ratedExcellentBy12980 ratedExcellentBy12980 ratedExcellentBy12980 ratedExcellentBy12980 ratedExcellentBy12980 ratedExcellentBy12980 ratedExcellentBy12980 starLogo trustpilot trustpilot";
+      }
+
+      .ratedExcellentBy12980 {
+            grid-area: ratedExcellentBy12980;
+            /* border: 2px solid red; */
+            display: flex;
+            min-height: 0.7rem;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7rem;
+            /* font-weight: bold; */
+      }
+
+      .starLogo {
+            grid-area: starLogo;
+            /* border: 2px solid blue; */
+            display: flex;
+            position: relative;
+            align-items: center;
+            /* justify-content: center; */
+      }
+
+      .starLogoHolder {
+            display: flex;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            /* border: 2px solid gold; */
+            position: absolute;
+            background-image: url(images/starLogo1.jpg);
+            background-size: 90%;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            bottom: 0.1rem;
+      }
+
+      .trustpilot {
+            grid-area: trustpilot;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            position: relative;
+      }
+
+      /* learnExploreContainer ends here */
+
+      /* .loginMainBody ends here */
+
+
+
+      /* .loginBottomNavBar starts here */
+      .loginBottomNavBar {
+            grid-area: loginBottomNavBar;
+            border-top: 1px solid rgb(124, 65, 147);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "loginHome loginHistory loginTrades loginWallet loginMore";
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 3.5rem;
+            /* padding: 0.4rem; */
+            background: rgb(245, 242, 248);
+      }
+
+      /* Home */
+      .loginHome {
+            grid-area: loginHome;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5rem;
+      }
+
+      .logoHomeContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-width: 2rem;
+            min-height: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            text-decoration: none;
+      }
+
+      .logoHomeContainer p {
+            margin-top: 1.3rem;
+            font-size: 0.8rem;
+            color: black;
+      }
+
+      .loginHomeLogoHolder {
+            display: flex;
+            min-width: 1.3rem;
+            min-height: 1.3rem;
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* History */
+      .loginHistory {
+            grid-area: loginHistory;
+            /* border:  2px solid red; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5rem;
+      }
+
+      .loginHistoryContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-width: 2rem;
+            min-height: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            text-decoration: none;
+      }
+
+      .loginHistoryContainer p {
+            margin-top: 1.3rem;
+            font-size: 0.8rem;
+            color: black;
+      }
+
+      .loginHistoryLogoHolder {
+            display: flex;
+            min-width: 1.3rem;
+            min-height: 1.3rem;
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* Trades */
+      .loginTrades {
+            grid-area: loginTrades;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .loginTradesContainer {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            min-width: 2rem;
+            min-height: 3.5rem;
+            /* border: 2px solid red; */
+            align-items: center;
+            text-decoration: none;
+            bottom: 0.5rem;
+      }
+
+      .loginTradesContainer p {
+            margin-top: 2.2rem;
+            font-size: 0.8rem;
+            color: black;
+      }
+
+      .loginTradesLogoHolder {
+            display: flex;
+            min-width: 2.2rem;
+            min-height: 2.2rem;
+            border: 3px solid white;
+            background: rgb(124, 65, 147);
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .loginTradesLogoHolder .fa-solid {
+            color: white;
+      }
+
+      /* Wallet */
+      .loginWallet {
+            grid-area: loginWallet;
+            /* border: 2px solid gold; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5rem;
+      }
+
+      .loginWalletContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-width: 2rem;
+            min-height: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            text-decoration: none;
+      }
+
+      .loginWalletContainer p {
+            margin-top: 1.3rem;
+            font-size: 0.8rem;
+            color: black;
+      }
+
+      .loginWalletLogoHolder {
+            display: flex;
+            min-width: 1.3rem;
+            min-height: 1.3rem;
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* More */
+      .loginMore {
+            grid-area: loginMore;
+            /* border: 2px solid grey; */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0.5rem;
+      }
+
+      .loginMoreContainer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-width: 2rem;
+            min-height: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            text-decoration: none;
+      }
+
+      .loginMoreContainer p {
+            margin-top: 1.3rem;
+            font-size: 0.8rem;
+            color: black;
+      }
+
+      .loginMoreLogoHolder {
+            display: flex;
+            min-width: 1.3rem;
+            min-height: 1.3rem;
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+      }
+
+      /* .loginBottomNavBar ends here */
+}

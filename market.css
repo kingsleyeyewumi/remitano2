@@ -1,0 +1,1047 @@
+@media (max-width:1440px){
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+      /* Main Body Container start here */
+      #marketMainBodyContainer{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 5rem 8rem auto;
+            min-height: 100vh;
+            /* border: 2px solid black; */
+            grid-template-areas: "marketNavBarContainer"
+            "globalHomeCountryContainer"
+            "otherCountriesContainer";
+      }
+
+      /* Main Body Contents start here */
+      .marketNavBarContainer{
+            grid-area: marketNavBarContainer;
+            /* border: 2px solid blue; */
+            background: white;
+            display: grid;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            position: fixed;
+            width: 100%;
+            min-height: 5rem;
+            z-index: 200;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas: "backArrowMarketContainer"
+            "searchBarContainer";
+      }
+
+      /* Backward Arrow & Market Container */
+      .backArrowMarketContainer{
+            grid-area: backArrowMarketContainer;
+            /* border: 2px solid green; */
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "backArrowHolder marketHolder marketHolder marketHolder marketHolder marketHolder marketHolder marketHolder marketHolder marketHolder";
+      }
+      /* Back-Arrow */
+      .backArrowHolder{
+            grid-area: backArrowHolder;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            align-items: center;
+            /* justify-content: center; */
+      }
+      .backwardArrow{
+            display: flex;
+            position: absolute;
+            min-width: 1rem;
+            min-height: 1rem;
+            align-items: center;
+            text-decoration: none;
+      }
+
+      /* Market */
+      .marketHolder{
+            grid-area: marketHolder;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+      }
+      .marketHolder p{
+            display: flex;
+            min-width: 4rem;
+            min-height: 1.5rem;
+            position: absolute;
+            /* border: 2px solid black; */
+      }
+
+
+      /* Search Bar */
+      .searchBarContainer{
+            grid-area: searchBarContainer;
+            /* border: 2px solid gold; */
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+       }
+      /* Search Logo */
+      .searchLogoHolder{
+            /* border: 2px solid blue; */
+            display: flex;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            left: 0.7rem;
+            top: 0.9rem;
+            z-index: 100;
+      }
+      /* Search */
+      #search{
+            display: flex;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border: 0.1rem solid rgb(124, 65, 147);
+            border-radius: 0.5rem;
+            padding-left: 2.6rem;
+            font-size: 1rem;
+      }
+      .searchLogoHolder .fa-solid{
+            color: rgb(124, 65, 147);
+            font-size: 1.2rem;
+      }
+
+
+      /* Global & Home Country start here */
+      .globalHomeCountryContainer{
+            grid-area: globalHomeCountryContainer;
+            border-bottom: 0.01rem solid rgb(124, 65, 147);
+            margin-top: 1rem;
+            padding-bottom: 0.7rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas: "gobalContainer"
+            "nigeriaContainer";
+      }
+
+      /* Global start here */
+      .gobalContainer{
+            grid-area: gobalContainer;
+            /* border: 2px solid blue; */
+            display: grid;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "globalLogoContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer globalNameContainer";
+      }
+      /* Golobal Logo */
+      .globalLogoContainer{
+            grid-area: globalLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .globalLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/globalLogo.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Global Name */
+      .globalNameContainer{
+            grid-area: globalNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .globalNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-left: 0.8rem;
+      }
+
+      /* Nigeria start here */
+      .nigeriaContainer{
+            grid-area: nigeriaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Nigeria Logo */
+      .nigeriaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .nigeriaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/nigeriaFlagLogo.webp);
+            background-size: 140%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Nigeria Name */
+      .nigeriaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .nigeriaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-left: 0.8rem;
+      }
+
+
+
+
+      /* Other Countries start here */
+      .otherCountriesContainer{
+            grid-area: otherCountriesContainer;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            position: relative;
+            font-size: 0.8rem;
+      }
+
+      /* Afghanistan start here */
+      .afghanistanContainer{
+            grid-area: afghanistanContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Afghanistan Logo */
+      .afghanistanLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .afghanistanLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/afghanistanFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Afghanistan Name */
+      .afghanistanNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .afghanistanNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Algeria start here */
+      .algeriaContainer{
+            grid-area: algeriaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Algeria Logo */
+      .algeriaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .algeriaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/algeriaFlagLogo.jpg);
+            background-size: 150%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Algeria Name */
+      .algeriaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .algeriaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Angola start here */
+      .angolaContainer{
+            grid-area: angolaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Angola Logo */
+      .angolaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .angolaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/angolaFlagLogo.webp);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Angola Name */
+      .angolaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .angolaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Argentina start here */
+      .argentinaContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Argentina Logo */
+      .argentinaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .argentinaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/argentinaFlagLogo.png);
+            background-size: 170%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Argentina Name */
+      .argentinaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .argentinaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Armenia start here */
+      .armeniaContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Armenia Logo */
+      .armeniaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .armeniaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/armeniaFlagLogo.jpeg);
+            background-size: 150%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Armenia Name */
+      .armeniaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .armeniaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Australia start here */
+      .australiaContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Australia Logo */
+      .australiaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .australiaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/australiaFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Australia Name */
+      .australiaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .australiaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+       /* Austria start here */
+      .austriaContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Austria Logo */
+      .austriaLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .austriaLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/austriaFlagLogo.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Austria Name */
+      .austriaNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .austriaNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+       /* Azerbaijan start here */
+      .azerbaijanContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Azerbaijan Logo */
+      .azerbaijanLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .azerbaijanLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/azerbaijanFlagLogo.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Azerbaijan Name */
+      .azerbaijanNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .azerbaijanNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Bahamas start here */
+      .bahamasContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Bahamas Logo */
+      .bahamasLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .bahamasLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/bahamasFlagLogo.jpg);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Bahamas Name */
+      .bahamasNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .bahamasNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+      /* Bahrain start here */
+      .bahrainContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Bahrain Logo */
+      .bahrainLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .bahrainLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/bahrainFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Bahrain Name */
+      .bahrainNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .bahrainNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+
+      /* Bangladesh start here */
+      .bangladeshContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Bangladesh Logo */
+      .bangladeshLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .bangladeshLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/bangladeshFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Bangladesh Name */
+      .bangladeshNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .bangladeshNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+
+      /* Belarus start here */
+      .belarusContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Belarus Logo */
+      .belarusLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .belarusLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/belarusFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Belarus Name */
+      .belarusNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .belarusNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+
+
+       /* Belgium start here */
+      .belgiumContainer{
+            grid-area: argentinaContainer;
+            /* border: 2px solid black; */
+            display: grid;
+            min-height: 3rem;
+            text-decoration: none;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "nigeriaLogoContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer nigeriaNameContainer";
+      }
+
+      /* Belgium Logo */
+      .belgiumLogoContainer{
+            grid-area: nigeriaLogoContainer;
+            /* border: 2px solid black; */
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+      }
+      /* Logo Holder */
+      .belgiumLogoHolder{
+            display: flex;
+            min-width: 2rem;
+            min-height: 2rem;
+            /* border: 2px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            background-image: url(images/belgiumFlagLogo.png);
+            background-size: 130%;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+      /* Belgium Name */
+      .belgiumNameContainer{
+            grid-area: nigeriaNameContainer;
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+      }
+      /* Name Holder */
+      .belgiumNameHolder{
+            display: flex;
+            min-width: 100%;
+            min-height: 1rem;
+            position: absolute;
+            /* border: 2px solid gold; */
+            align-items: center;
+            color: rgb(73, 68, 68);
+            font-weight: bold;
+            margin-left: 0.8rem;
+      }
+}
